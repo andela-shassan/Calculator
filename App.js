@@ -70,7 +70,7 @@ export default class App extends Component {
         inputRow.push(
           <CalcButton value={input} key={i + '_' + j}
             onPress={this.onButtonPressed.bind(this, input)}
-              highlight={this.shouldHighlight(input) ? true : false}
+              highlight={this.shouldHighlight(input)}
            />
         );
       }
